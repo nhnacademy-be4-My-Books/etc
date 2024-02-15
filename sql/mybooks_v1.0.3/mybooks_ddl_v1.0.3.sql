@@ -562,7 +562,7 @@ ALTER TABLE `review` ADD CONSTRAINT `FK_order_detail_to_review_1` FOREIGN KEY (
 )
 REFERENCES `order_detail` (
     `order_detail_id`
-)
+);
 
 ALTER TABLE `order_detail` ADD CONSTRAINT `FK_book_order_TO_order_detail_1` FOREIGN KEY (
 	`order_id`
