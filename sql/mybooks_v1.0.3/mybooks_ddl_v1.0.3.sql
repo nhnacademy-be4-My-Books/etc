@@ -117,7 +117,7 @@ CREATE TABLE `category` (
 
 CREATE TABLE `book` (
 	`book_id`	bigint	NOT NULL Auto_Increment,
-	`book_status_id`	int	NOT NULL,
+	`book_status_id`	varchar(20)	NOT NULL,
 	`publisher_id`	int	NOT NULL,
 	`book_name`	varchar(100)	NOT NULL,
 	`book_isbn`	varchar(13)	NOT NULL UNIQUE,
@@ -284,8 +284,7 @@ CREATE TABLE `publisher` (
 );
 
 CREATE TABLE `book_status` (
-	`book_status_id`	int	NOT NULL Auto_Increment,
-	`book_status_name`	varchar(20)	NOT NULL,
+	`book_status_id`	varchar(20)	NOT NULL,
     
     CONSTRAINT PK_BOOK_STATUS PRIMARY KEY(`book_status_id`)
 );
