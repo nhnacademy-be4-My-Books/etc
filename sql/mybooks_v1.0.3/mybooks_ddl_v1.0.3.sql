@@ -108,7 +108,7 @@ CREATE TABLE `tag` (
 
 CREATE TABLE `category` (
 	`category_id`	int	NOT NULL Auto_Increment,
-	`parent_category_id`	int	NOT NULL,
+	`parent_category_id`	int NULL,
 	`category_name`	varchar(20)	NOT NULL UNIQUE,
 	`category_created_date`	date	NOT NULL,
     
