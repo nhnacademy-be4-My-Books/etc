@@ -92,7 +92,7 @@ CREATE TABLE `delivery_rule` (
 	`delivery_company_name`	varchar(20)	NOT NULL,
 	`delivery_cost`	int	NOT NULL,
 	`delivery_rule_cost`	int	NOT NULL,
-	`delivery_rule_created_at`	date	NOT NULL,
+	`delivery_rule_created_date`	date	NOT NULL,
 	`is_available`	boolean	NOT NULL	DEFAULT true,
     
     CONSTRAINT PK_DELIVERY_RULE PRIMARY KEY(`delivery_rule_id`)
@@ -101,7 +101,7 @@ CREATE TABLE `delivery_rule` (
 CREATE TABLE `tag` (
 	`tag_id`	int	NOT NULL Auto_Increment,
 	`tag_name`	varchar(20)	NOT NULL UNIQUE,
-	`tag_created_at`	date	NOT NULL,
+	`tag_created_date`	date	NOT NULL,
     
     CONSTRAINT PK_TAG PRIMARY KEY(`tag_id`)
 );
@@ -110,7 +110,7 @@ CREATE TABLE `category` (
 	`category_id`	int	NOT NULL Auto_Increment,
 	`parent_category_id`	int	NOT NULL,
 	`category_name`	varchar(20)	NOT NULL UNIQUE,
-	`category_created_at`	date	NOT NULL,
+	`category_created_date`	date	NOT NULL,
     
     CONSTRAINT PK_CATEGORY PRIMARY KEY(`category_id`)
 );
