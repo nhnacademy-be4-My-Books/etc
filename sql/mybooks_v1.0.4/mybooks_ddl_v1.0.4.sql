@@ -58,7 +58,10 @@ CREATE TABLE `address` (
 	`address_id`	bigint	NOT NULL Auto_Increment,
 	`user_id`	bigint	NOT NULL,
 	`address_alias`	varchar(15)	NOT NULL,
-	`address_full_name`	varchar(150)	NOT NULL,
+	`address_road_name`	varchar(100)	NOT NULL,
+    `address_detail` varchar(100) NOT NULL,
+    `address_number` int NOT NULL,
+    `address_reference` varchar(100) NULL,
     
     CONSTRAINT PK_ADDRESS PRIMARY KEY(`address_id`)
 );
@@ -169,7 +172,7 @@ CREATE TABLE `user_grade_name` (
 
 CREATE TABLE `user_grade` (
 	`user_grade_id`	int	NOT NULL Auto_Increment,
-	`user_grade_name`	varchar(20)	NOT NULL,
+	`user_grade_name_id`	varchar(20)	NOT NULL,
 	`user_grade_min`	int	NOT NULL,
 	`user_grade_max`	int	NOT NULL,
 	`user_grade_rate`	int	NOT NULL,
@@ -438,10 +441,10 @@ REFERENCES `user_status` (
 );
 
 ALTER TABLE `user_grade` ADD CONSTRAINT `FK_user_grade_name_TO_user_grade_1` FOREIGN KEY (
-    `user_grade_name`
+    `user_grade_name_id`
 )
 REFERENCES `user_grade_name` (
-    `user_gradne_name_id`
+    `user_grade_name_id`
 );
 
 ALTER TABLE `address` ADD CONSTRAINT `FK_user_TO_address_1` FOREIGN KEY (
