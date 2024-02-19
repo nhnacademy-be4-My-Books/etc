@@ -34,7 +34,7 @@ DROP TABLE IF EXISTS `book`;
 DROP TABLE IF EXISTS `book_status`;
 DROP TABLE IF EXISTS `publisher`;
 DROP TABLE IF EXISTS `orders_status`;
-DROP TABLE IF EXISTS `user_grade_name`
+DROP TABLE IF EXISTS `user_grade_name`;
 
 CREATE TABLE `user` (
 	`user_id`	bigint	NOT NULL Auto_Increment,
