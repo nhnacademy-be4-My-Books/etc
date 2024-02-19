@@ -177,6 +177,7 @@ CREATE TABLE `user_grade` (
 	`user_grade_max`	int	NOT NULL,
 	`user_grade_rate`	int	NOT NULL,
 	`user_grade_created_date`	date	NOT NULL,
+    `is_available` boolean NOT NULL default true,
     
     CONSTRAINT PK_USER_GRADE PRIMARY KEY(`user_grade_id`)
 );
