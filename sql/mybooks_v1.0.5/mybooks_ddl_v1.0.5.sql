@@ -134,9 +134,6 @@ CREATE TABLE `book` (
 	`book_discount_rate`	int	NOT NULL,
 	`book_stock`	int	NOT NULL,
 	`book_view_count`	int	NOT NULL,
-	`book_total_score`	int	NOT NULL,
-	`book_review_count`	int	NOT NULL,
-	`book_like_count`	int	NOT NULL,
 	`is_packaging`	boolean	NOT NULL,
 	`book_created_date`	date	NOT NULL,
     
