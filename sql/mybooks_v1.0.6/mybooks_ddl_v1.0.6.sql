@@ -361,8 +361,8 @@ CREATE TABLE `image` (
 	`review_id`	bigint	NULL,
 	`book_id`	bigint	NULL,
 	`image_status_id`	varchar(20)	NOT NULL,
-	`image_path`	varchar(150)	NOT NULL,
-	`image_file_name`	varchar(30)	NOT NULL,
+	`image_path`	varchar(200)	NOT NULL,
+	`image_file_name`	varchar(200)	NOT NULL,
 	`image_extension`	varchar(10)	NOT NULL,
 	`image_created_date`	date	NOT NULL,
     
