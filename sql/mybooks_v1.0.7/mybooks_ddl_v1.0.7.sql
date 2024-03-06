@@ -75,6 +75,7 @@ CREATE TABLE `book_order` (
 	`user_coupon_id`	bigint	NULL,
 	`wrap_id`	int	NULL,
 	`order_out_date`	date	NULL,
+    `order_delivery_date` date NULL,
 	`order_date`	date	NOT NULL,
 	`order_invoice_number`	varchar(20)	NULL UNIQUE,
 	`order_receiver_name`	varchar(30)	NOT NULL,
