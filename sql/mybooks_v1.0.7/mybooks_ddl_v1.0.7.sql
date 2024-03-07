@@ -237,6 +237,7 @@ CREATE TABLE `point_rule` (
 	`point_rule_rate`	int	NULL,
 	`point_rule_cost`	int	NULL,
 	`point_rule_created_date`	date	NOT NULL,
+    `is_available` boolean NOT NULL,
     
     CONSTRAINT PK_POINT_RULE PRIMARY KEY(`point_rule_id`)
 );
