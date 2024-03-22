@@ -51,6 +51,7 @@ CREATE TABLE `user` (
 	`user_latest_login_at`	datetime	NULL,
 	`user_deleted_at`	datetime	NULL,
     `user_grade_changed_date` date NULL,
+    `user_oauth_id` varchar(100) NULL,
 
     CONSTRAINT PK_USER PRIMARY KEY(`user_id`)
 );
