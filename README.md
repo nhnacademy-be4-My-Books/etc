@@ -87,7 +87,7 @@
 ![SonarQube](https://img.shields.io/badge/SonarQube-4E9BCD.svg?style=for-the-badge&logo=sonarqube&logoColor=white)
 
 ## 아키텍쳐 구조
-![Frame 1 (1)](https://github.com/nhnacademy-be4-My-Books/.github/assets/80580473/2d38fd9f-193c-431e-a4f3-c1213499594b)
+![my-books service architecture](https://github.com/nhnacademy-be4-My-Books/etc/assets/121997029/f451aa1e-7312-465c-ab46-01c95a38fe7c)
 ## CI/CD
 ![CI_CD](https://github.com/nhnacademy-be4-My-Books/.github/assets/80580473/5cd4f639-bd75-47cc-8c04-eb0383b8e31f)
 ### ERD
